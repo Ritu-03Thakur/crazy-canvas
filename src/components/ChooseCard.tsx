@@ -12,10 +12,10 @@ interface ChooseCardProps {
     
      
     <Link to={link}>
-<div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <img className="p-8 rounded-t-lg" src={img} alt="card image" />
-    <div className="px-5 pb-5">  
-            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{title}</h5> 
+<div className="flex flex-col justify-center items-center p-1  boxshadow w-full max-w-sm  bg-col-o rounded-lg shadow ">
+        <img className=" rounded-t-lg" src={img} alt="card image" />
+    <div className="p-2">  
+            <h5 className=" text-2xl uppercase   font-semibold tracking-tight text-col-b ">{title}</h5> 
        
     </div>
 </div>

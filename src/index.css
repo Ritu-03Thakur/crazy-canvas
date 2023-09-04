@@ -10,4 +10,12 @@
 }
 body{
   background-color:#EAAC8B ;
+  overflow-x: hidden;
+}
+
+.boxshadow {
+  box-shadow: 1px 1px 9px #E56B6F
+}
+.linear{
+  background: linear-gradient(45deg ,  #6D597A ,  #B56576);
 }

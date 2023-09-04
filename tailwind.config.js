@@ -11,6 +11,7 @@ export default {
         "col-p" : "#B56576" , 
         "col-o" : "#E56B6F" , 
         "col-s" : "#EAAC8B" , 
+        "col-b" : "#5d4037" , 
       }
     },
   },
