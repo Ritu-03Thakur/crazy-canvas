@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BoardData } from "../data";
 import { Link } from "react-router-dom";
+import {BsMusicNoteBeamed} from "react-icons/bs" ; 
 
 function SoundBoard() {
   const [char, setChar] = useState(BoardData[0]);
@@ -82,8 +83,8 @@ function SoundBoard() {
               onClick={handlePlay}
               value={char.sound}
             >
-             <span className="relative px-5 py-2.5 transition-all ease-in duration-75  rounded-md group-hover:bg-opacity-0">
-                {char.cartoonName} SOUND
+             <span className="flex gap-2 items-center relative px-5 py-2.5 transition-all ease-in duration-75  rounded-md group-hover:bg-opacity-0">
+                PLAY <BsMusicNoteBeamed /><BsMusicNoteBeamed /> ...
               </span>
             </button>
           </div>
