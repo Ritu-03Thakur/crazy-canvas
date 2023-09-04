@@ -1,28 +1,22 @@
 
-import ChooseCard from './components/ChooseCard';
-
+import Home from './components/Home';
+import { BrowserRouter , Route , Routes } from 'react-router-dom';
+import SoundBoard from './components/SoundBoard';
 
 
 const App  = () => {
-  const nameCards = [
-    {
-      id: "C1",
-      img: "/csb.jpeg",
-      title: "Character SoundBoard",
-      link: "/",
-    },
-  ];
 
-  return (
-    <>
-    <div className='flex flex-col m-auto items-center '>
-    <h1 className='text-4xl font-extrabold dark:text-col-v'>CRAZY CANVAS</h1>
-      {nameCards.map((card) => (
-        <ChooseCard key={card.id} {...card} />
-      ))}
-    </div>
+  return(
+    <>   
+    <BrowserRouter>
+    <Routes>
+      <Route  path='/' element= { <Home />}/>
+      <Route  path='/soundboard' element= { <SoundBoard />}/>
+    </Routes>
+    </BrowserRouter>
+  
     </>
-  );
+  )
 };
 
 export default App;
